@@ -23,7 +23,7 @@ namespace client {
   class BlueprintLibrary
     : public EnableSharedFromThis<BlueprintLibrary>,
       private MovableNonCopyable {
-    using map_type = std::unordered_map<std::string, ActorBlueprint>;
+    using map_type = std::unordered_map<std::string, ActorBlueprint>;// 使用map_type作为std::unordered_map<std::string, ActorBlueprint>的别名
   public:
 
     // 这里我们强制使用一些 typedef 来使这个类看起来像一个列表。

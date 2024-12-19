@@ -3,7 +3,7 @@ import requests#导入request模块，用于请求
 import argparse#导入argparse模块，用于处理命令行参数
 import os#导入os模块，用于提供与操作系统交互
 
-from collections import defaultdict
+from collections import defaultdict# 从collections模块中导入defaultdict类，用于创建带有默认值的字典
 from collections import Counter#导入git模块，用于操作Git库
 
 import git  # 导入git模块，用于操作Git库

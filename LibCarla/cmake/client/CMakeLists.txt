@@ -13,6 +13,7 @@ if (BUILD_RSS_VARIANT)
   # 快速C++日志库：spdlog
   find_package(spdlog CONFIG REQUIRED
     HINTS ${ADRSS_INSTALL_DIR}/spdlog/)
+  # 获取spdlog库的包含目录属性
   get_target_property(spdlog_include_dirs spdlog::spdlog INTERFACE_INCLUDE_DIRECTORIES)
   get_target_property(spdlog_file spdlog::spdlog LOCATION)
   foreach(dir ${spdlog_include_dirs})

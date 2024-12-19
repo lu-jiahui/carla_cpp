@@ -98,6 +98,7 @@ endif()
 if (LIBCARLA_BUILD_RELEASE)
   # Specific options for release.
   set_target_properties(libcarla_test_${carla_config}_release PROPERTIES COMPILE_FLAGS "${CMAKE_CXX_FLAGS_RELEASE}")
+  # 链接所需的库
   target_link_libraries(libcarla_test_${carla_config}_release "carla_${carla_config}${carla_target_postfix}")
   if (CMAKE_BUILD_TYPE STREQUAL "Client")
       target_link_libraries(libcarla_test_${carla_config}_release "${BOOST_LIB_PATH}/libboost_filesystem.a")

@@ -51,7 +51,8 @@ namespace client {
     /// @warning 线性复杂度。
     const_reference operator[](size_type pos) const {
       using diff_t = std::iterator_traits<const_iterator>::difference_type;
-      return std::next(_blueprints.begin(), static_cast<diff_t>(pos))->second;
+      return std::next(_blueprints.begin(), static_cast<diff_t>(pos))->second; 
+      // 使用std::next从_blueprints容器的起始位置开始，移动pos个位置，并返回该位置的元素的second部分
     }
 
     /// @warning 线性复杂度。

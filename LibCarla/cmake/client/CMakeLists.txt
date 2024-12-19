@@ -111,6 +111,7 @@ file(GLOB libcarla_carla_client_sources
     "${libcarla_source_path}/carla/client/*.cpp"
     "${libcarla_source_path}/carla/client/*.h")
 set(libcarla_sources "${libcarla_sources};${libcarla_carla_client_sources}")
+# 安装找到的客户端源文件到目标目录include/carla/client
 install(FILES ${libcarla_carla_client_sources} DESTINATION include/carla/client)
 
 # 添加客户端详细目录（LibCarla/source/carla/client/detail）下的*.cpp和.h文件

@@ -7,6 +7,7 @@ option (BUILD_RSS_VARIANT "Enables ad-rss-lib based RSS components" OFF)
 set(carla_target_postfix "")
 if (BUILD_RSS_VARIANT)
   set(carla_target_postfix "_rss")
+# 初始化两个变量，用于存储 ADRSS 库的包含目录和库文件
   set(ADRSS_INCLUDE_DIRS)
   set(ADRSS_LIBS)
 

@@ -3,6 +3,7 @@ project(libcarla-client)
 
 # 启用/安装 RSS VARIANT
 option (BUILD_RSS_VARIANT "Enables ad-rss-lib based RSS components" OFF)
+# 初始化一个变量，用于存储目标文件名的后缀
 set(carla_target_postfix "")
 if (BUILD_RSS_VARIANT)
   set(carla_target_postfix "_rss")

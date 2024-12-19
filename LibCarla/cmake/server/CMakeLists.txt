@@ -66,6 +66,7 @@ file(GLOB libcarla_carla_road_element_headers "${libcarla_source_path}/carla/roa
 // 这样在项目整体安装时，相应的头文件就能被准确放置在对应的目录位置，便于其他代码引用这些头文件中的定义来实现相关功能。
 install(FILES ${libcarla_carla_road_element_headers} DESTINATION include/carla/road/element)
 
+# 查找LibCarla/source/carla/road/general目录下的所有.h文件，并将它们存储在libcarla_carla_road_general_headers变量中
 file(GLOB libcarla_carla_road_general_headers "${libcarla_source_path}/carla/road/general/*.h")
 install(FILES ${libcarla_carla_road_general_headers} DESTINATION include/carla/road/general)
 

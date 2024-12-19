@@ -17,6 +17,7 @@ if (BUILD_RSS_VARIANT)
   # 获取spdlog库的包含目录属性
   get_target_property(spdlog_include_dirs spdlog::spdlog INTERFACE_INCLUDE_DIRECTORIES)
   get_target_property(spdlog_file spdlog::spdlog LOCATION)
+  # 遍历所有包含目录
   foreach(dir ${spdlog_include_dirs})
     file(GLOB spdlog_includes "${dir}/*")
     install(DIRECTORY ${spdlog_includes} DESTINATION include/system)

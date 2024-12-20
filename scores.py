@@ -80,6 +80,7 @@ comment_counts = {}
 
 page = 1
 while True:
+# 构建API请求URL，包含仓库所有者、仓库名、状态（所有）、每页数量（100）和当前页码
     url = f'https://api.github.com/repos/{owner}/{repo}/issues?state=all&per_page=100&page={page}'
     response = requests.get(url, headers=headers)
     
